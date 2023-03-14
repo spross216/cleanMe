@@ -8,7 +8,7 @@ directories that will need to be occasionaly cleaned out of the junk'''
 
 screenshots = "/mnt/c/users/sross/My Documents/screenshots"
 downloads = "/mnt/c/users/sross/Downloads"
-
+desktop = "/mnt/c/users/sross/Desktop"
 def cleanMe(path):
 
     for root, dirs, files in os.walk(path):
@@ -22,3 +22,4 @@ def cleanMe(path):
 if __name__ == "__main__":
     cleanMe(screenshots)
     cleanMe(downloads)
+    cleanMe(desktop)
